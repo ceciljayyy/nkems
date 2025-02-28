@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  @apply text-sm;
+  @apply bg-gray-500;
+  @apply text-gray-900;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* white */
+    --foreground: 222.2 47.4% 11.2%; /* gray-900 */
+  }
+
+  .dark {
+    --background: 224 71% 4%; /* gray-950 */
+    --foreground: 213 31% 91%; /* gray-300 */
+  }
+}
+
+@media (min-width: 768px){
+  .custom-grid-rows {
+    grid-template-rows: repeat(8, 20vh);
+  }
+}
+
+@media (min-width: 1280px) {
+  .custom-grid-rows {
+    grid-template-rows: repeat(8, 7.5vh);
+  }
+}

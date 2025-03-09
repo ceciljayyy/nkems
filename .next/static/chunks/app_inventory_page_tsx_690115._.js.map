@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/nanac/client/app/inventory/page.tsx"],"sourcesContent":["\"use client\"\r\nimport { useGetProductsQuery } from \"@/state/api\";\r\n\r\n\r\n\r\n\r\nconst Inventory = () => {\r\n    const  {data: products, isError, isLoading} = useGetProductsQuery();\r\n    \r\n    if(isLoading) \r\n        \r\n        { return <div \r\n        className=\"py-4\">Loading...</div>;\r\n        }\r\n    if(isError || !products) \r\n        { return <div className=\"text-center text-red-500 py-4 font-semibold text-xl\"\r\n        >\r\n            Error! Failed to fetch Products</div>;\r\n        }\r\n\r\n        \r\n           \r\n  return (\r\n    <div className=\"flex flex-col\">\r\n           <Header name=\"Invewntory\"/>\r\n           \r\n    </div>\r\n  )\r\n}\r\n\r\nexport default Inventory"],"names":[],"mappings":";;;;AACA;;;AADA;;AAMA,MAAM,YAAY;;IACd,MAAO,EAAC,MAAM,QAAQ,EAAE,OAAO,EAAE,SAAS,EAAC,GAAG,CAAA,GAAA,+GAAA,CAAA,sBAAmB,AAAD;IAEhE,IAAG,WAEC;QAAE,qBAAO,6LAAC;YACV,WAAU;sBAAO;;;;;;IACjB;IACJ,IAAG,WAAW,CAAC,UACX;QAAE,qBAAO,6LAAC;YAAI,WAAU;sBACvB;;;;;;IAED;IAIN,qBACE,6LAAC;QAAI,WAAU;kBACR,cAAA,6LAAC;YAAO,MAAK;;;;;;;;;;;AAIxB;GAtBM;;QAC4C,+GAAA,CAAA,sBAAmB;;;KAD/D;uCAwBS"}},
+    {"offset": {"line": 66, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

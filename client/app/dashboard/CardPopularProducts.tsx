@@ -17,7 +17,9 @@ const CardPopularProducts = () => {
   return (
     <div className="row-span-3 xl:row-span-6 bg-white shadow-md rounded-2xl pb-16">
       <h3 className="text-lg font-semibold px-7 pt-5 pb-2">Popular Products</h3>
-      <hr />
+      
+      <div className="h-[1px] bg-gray-300 shadow-[0_2px_4px_1px_rgba(0,0,0,0.1)] "></div>
+      
       <div className="overflow-auto h-full">
         {dashboardMetrics?.popularProducts.map((product) => (
           <div

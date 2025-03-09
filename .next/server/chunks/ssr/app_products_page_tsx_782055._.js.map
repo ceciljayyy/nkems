@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/nanac/client/app/products/page.tsx"],"sourcesContent":["\"use client\";\r\n\r\nimport { useGetProductsQuery } from \"@/state/api\";\r\nimport { useState } from \"react\";\r\n\r\nconst Products = () => {\r\nconst [searchTerm, setSearchTerm] = useState(\"\");\r\nconst [isModelOpen, setIsModelOpen] = useState(false);\r\n\r\nconst {\r\n    data: products, isLoading, isError\r\n} = useGetProductsQuery(searchTerm);\r\n\r\nif( isLoading ) {\r\n     return <div\r\n     className=\" py-4\">Loading...</div>\r\n}\r\n\r\n if( isError  || !products) {\r\n     return  (<div\r\n     className=\" text-center text-500 py-4\"> Error Failed To Fecth </div>\r\n );\r\n}\r\n\r\n\r\n  return (\r\n    <div\r\n        className=\"mx-value pb-5 w-full \"\r\n    >Products</div>\r\n  )\r\n};\r\n\r\nexport default Products;"],"names":[],"mappings":";;;;AAEA;AACA;AAHA;;;;AAKA,MAAM,WAAW;IACjB,MAAM,CAAC,YAAY,cAAc,GAAG,CAAA,GAAA,qMAAA,CAAA,WAAQ,AAAD,EAAE;IAC7C,MAAM,CAAC,aAAa,eAAe,GAAG,CAAA,GAAA,qMAAA,CAAA,WAAQ,AAAD,EAAE;IAE/C,MAAM,EACF,MAAM,QAAQ,EAAE,SAAS,EAAE,OAAO,EACrC,GAAG,CAAA,GAAA,4GAAA,CAAA,sBAAmB,AAAD,EAAE;IAExB,IAAI,WAAY;QACX,qBAAO,8OAAC;YACR,WAAU;sBAAQ;;;;;;IACvB;IAEC,IAAI,WAAY,CAAC,UAAU;QACvB,qBAAS,8OAAC;YACV,WAAU;sBAA6B;;;;;;IAE5C;IAGE,qBACE,8OAAC;QACG,WAAU;kBACb;;;;;;AAEL;uCAEe"}},
+    {"offset": {"line": 51, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/nanac/client/app/dashboard/page.tsx"],"sourcesContent":["\"use client\";\r\nimport React from \"react\";\r\nimport CardPopularProducts from \"./CardPopularProducts\";\r\nimport TestDashboard from \"./testDashboard\";\r\n\r\nconst Dashboard = () => {\r\n  return (\r\n    <div className=\"grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 xl:overflow-auto gap-10 pb-4 custom-grid-rows\">\r\n      {/* For testing, you can swap the components below */}\r\n      {/* <CardPopularProducts /> */}\r\n      <TestDashboard />\r\n      <div className=\"row-span-3 xl:row-span-6 bg-gray-500\" />\r\n      <div className=\"row-span-2 xl:row-span-3 col-span-1 md:col-span-2 xl:col-span-1 bg-gray-500\" />\r\n      <div className=\"row-span-3 bg-gray-500\" />\r\n      <div className=\"md:row-span-1 xl:row-span-2 bg-gray-500\" />\r\n      <div className=\"md:row-span-1 xl:row-span-2 bg-gray-500\" />\r\n      <div className=\"md:row-span-1 xl:row-span-2 bg-gray-500\" />\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default Dashboard;\r\n"],"names":[],"mappings":";;;;;;;;;AAAA;;;AAKA,MAAM,YAAY;IAChB,qBACE,6LAAC;QAAI,WAAU;;0BAGb,6LAAC;;;;;0BACD,6LAAC;gBAAI,WAAU;;;;;;0BACf,6LAAC;gBAAI,WAAU;;;;;;0BACf,6LAAC;gBAAI,WAAU;;;;;;0BACf,6LAAC;gBAAI,WAAU;;;;;;0BACf,6LAAC;gBAAI,WAAU;;;;;;0BACf,6LAAC;gBAAI,WAAU;;;;;;;;;;;;AAGrB;KAdM;uCAgBS"}},
+    {"offset": {"line": 84, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

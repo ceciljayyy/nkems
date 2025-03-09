@@ -6,7 +6,7 @@ import { TrendingDown, TrendingUp } from 'lucide-react';
 import { Area, AreaChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 const CardPurchaseSummary = () => {
-  const { data: dashboardMetrics, isError, isLoading } = useGetDashboardMetricsQuery();
+  const { data: dashboardMetrics, isLoading } = useGetDashboardMetricsQuery();
   const purchaseData = dashboardMetrics?.purchaseSummary || [];
   const lastDataPoint = purchaseData.length > 0 ? purchaseData[purchaseData.length - 1] : null;
 
@@ -19,7 +19,7 @@ const CardPurchaseSummary = () => {
           {/* HEADER SECTION */}
           <div>
             <h2 className="text-lg font-semibold mb-2">Purchase Summary</h2>
-            <hr />
+            <div className="h-[1px] bg-gray-300 shadow-[0_2px_4px_1px_rgba(0,0,0,0.1)] mx-[-1.25rem]"></div>
           </div>
 
           {/* BODY SECTION */}

@@ -14,7 +14,7 @@ export interface Product {
 export interface SalesSummary {
   salesSummaryId: string;
   totalValue: number;
-  changepercentage?: number;
+  changePercentage?: number;
   date: string;
 }
 

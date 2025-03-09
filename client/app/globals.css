@@ -42,3 +42,12 @@ body,
     grid-template-rows: repeat(8, 7.5vh);
   }
 }
+/* In your stylesheet */
+:root {
+  --tooltip-bg: #fff;    /* White for light mode */
+  --tooltip-color: #000; /* Black for light mode */
+}
+[data-theme='dark'] {
+  --tooltip-bg: #333;    /* Dark gray for dark mode */
+  --tooltip-color: #fff; /* White for dark mode */
+}

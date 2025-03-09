@@ -12,7 +12,7 @@ const CardPopularProducts = () => {
 
   if (isLoading) {
     return <div className="m-5">Loading...</div>;
-  }
+  } 
 
   return (
     <div className="row-span-3 xl:row-span-6 bg-white shadow-md rounded-2xl pb-16">
